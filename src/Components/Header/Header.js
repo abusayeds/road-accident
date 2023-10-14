@@ -1,9 +1,8 @@
 import React from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPerson } from '@fortawesome/free-solid-svg-icons';
+import './Header.css'
 
 
 const navigation = [
@@ -16,7 +15,7 @@ const navigation = [
 
 const Header = () => {
   return (
-   <Disclosure as="nav" className="text-black mt-4  rounded">
+   <Disclosure as="nav" className=" header bg-slate-100 text-black   rounded">
       {({ open }) => (
         <>
           <div className=" max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -36,9 +35,9 @@ const Header = () => {
               <div className="flex  ">
                 <div className="">
                   
-                  <div className=' pl-12  text-cyan-900 text-start' >
-                   <p className='md:text-2xl text-1xl' > Road_accident</p>
-                   <p><FontAwesomeIcon icon={faPerson} className='text-yellow-700 text-xl' ></FontAwesomeIcon> Be_sefe</p>
+                  <div className=' pl-10  text-cyan-900 text-start' >
+                   <p className='md:text-2xl font-bold md:mt-3' > Road_accident</p>
+                   
                    
                     </div >
                   

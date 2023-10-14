@@ -12,7 +12,7 @@ const Recommeded = () => {
 
             <section className='flex  mt-1 p-2  '>
                 <div className='w-3/6'>
-                    <Link to= '/bd'><img className=' zoom rounded' src="https://cgs-bd.com/cms/media/images/af0f12aa-9e4b-49cb-a8cd-b1466431f760.jpg" alt="" srcset="" /></Link>
+                    <Link to= '/bd'><img className=' zoom rounded' src="https://image.slidesharecdn.com/presentation1-190322171937/75/road-accident-in-bangladesh-1-2048.jpg?cb=1668305366" alt="" srcset="" /></Link>
                 </div>
                 <div className=' md:mt-4 ml-3 text-start '>
                     <p className='font-bold text-1xl'>Bangladesh   <a className='ml-1' href="https://www.google.com/maps/place/Bangladesh/@23.8085476,89.8005415,7z/data=!4m6!3m5!1s0x30adaaed80e18ba7:0xf2d28e0c4e1fc6b!8m2!3d23.684994!4d90.356331!16zL20vMDE2MmI?entry=ttu" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className='text-cyan-800' icon={faLocationDot}></FontAwesomeIcon></a> </p>

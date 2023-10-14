@@ -10,6 +10,7 @@ import Cd from './Components/Cd/Cd';
 import Md from './Components/Md/Md';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
+import Causes from './Components/Causes/Causes';
 
 
 function App() {
@@ -49,6 +50,10 @@ function App() {
       {
         path: 'dashboard',
         element: <Dashboard></Dashboard>
+      },
+      {
+        path: 'causes',
+        element: <Causes></Causes>
       }
 
 
