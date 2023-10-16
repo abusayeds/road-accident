@@ -53,6 +53,7 @@ function App() {
       },
       {
         path: 'causes',
+        loader: () => fetch('Tools.json'),
         element: <Causes></Causes>
       }
 

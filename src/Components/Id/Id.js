@@ -21,7 +21,7 @@ const Id = () => {
               <div className='flex md:w-4/6'>
                 
                 <div>
-                <Link to='/causes'><p><img className='rounded' src="https://previews.123rf.com/images/markuk97/markuk971704/markuk97170400022/76706331-india-word-3d-illustration-with-a-flag-texture-on-an-isolated-white-background.jpg" alt="" srcset="" /></p></Link>
+                <Link to='/causes'><p><img className='rounded' src="https://previews.123rf.com/images/markuk97/markuk971704/markuk97170400022/76706331-india-word-3d-illustration-with-a-flag-texture-on-an-isolated-white-background.jpg" alt=""  /></p></Link>
                 </div>
                  <div className='ml-10'>
                   <Link to='/causes'>

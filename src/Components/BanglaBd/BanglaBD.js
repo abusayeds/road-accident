@@ -21,7 +21,7 @@ const BanglaBD = () => {
                   <div className='flex md:w-4/6'>
                     
                     <div>
-                    <Link to='/causes'><p><img className='rounded' src="https://t4.ftcdn.net/jpg/04/73/67/49/360_F_473674937_HJnwfSMsQJ4f4CLM9Ijgf0NuM1aXBs31.jpg" alt="" srcset="" /></p></Link>
+                    <Link to='/causes'><p><img className='rounded' src="https://t4.ftcdn.net/jpg/04/73/67/49/360_F_473674937_HJnwfSMsQJ4f4CLM9Ijgf0NuM1aXBs31.jpg" alt="" /></p></Link>
                     </div>
                      <div className='ml-10'>
                       <Link to='/causes'>

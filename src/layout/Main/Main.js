@@ -11,11 +11,16 @@ const Main = () => {
         <div>
             <Header></Header>
            <div className='main' >
+ 
            <div>
            <Outlet></Outlet>
            <Footer></Footer>
            </div>
-           <div><Recommeded></Recommeded></div>
+
+           <div>
+            <Recommeded></Recommeded>
+           </div>
+
            </div>
             
         </div>

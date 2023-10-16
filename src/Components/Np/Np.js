@@ -21,7 +21,7 @@ const Np = () => {
               <div className='flex md:w-4/6'>
                 
                 <div>
-                <Link to='/causes'><p><img className='rounded' src="https://c8.alamy.com/comp/2A8W46A/nepalese-flag-text-font-nepal-symbol-background-2A8W46A.jpg" alt="" srcset="" /></p></Link>
+                <Link to='/causes'><p><img className='rounded' src="https://c8.alamy.com/comp/2A8W46A/nepalese-flag-text-font-nepal-symbol-background-2A8W46A.jpg" alt="" /></p></Link>
                 </div>
                  <div className='ml-10'>
                   <Link to='/causes'>

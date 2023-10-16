@@ -1,0 +1,55 @@
+[   
+
+    {
+      "_id": "1",
+      "picture": "https://www.eurekaafricablog.com/wp-content/uploads/2018/06/Cause-Overspeeding.jpg",
+      "name": " Cause Overspeeding",
+      "percentage": "80% accident this causes "
+    
+    },
+    {
+      "_id": "2",
+      "picture": "https://en-media.thebetterindia.com/uploads/2015/07/drunk.jpg",
+      "name": " Drunken Driving",
+      "percentage": "50% accident this causes "
+    
+    },
+   
+    {
+      "id": "3",
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhpiE2HntXVqBzGxqxIQhf8cL1-uxd2qDnQ",
+      "name": "Distraction to Driver",
+      "percentage": "50% accident this causes "
+     
+    },
+    {
+        "_id": "4",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRafYlOhIlaX0HDqblHN2ccHIXhMsA2BxUppw",
+        "name": "Red Light umping",
+        "percentage": "30% accident this causes "
+     
+    },
+    {
+        "_id": "5",
+        "picture": "https://www.dailypioneer.com/uploads/2022/story/images/big/forced-scrappage-of-a-fit-vehicle-is-arbitrary-2022-10-06.jpg",
+        "name": "unfit vehicles",
+        "percentage": "35% accident this causes "
+     
+    },
+    {
+        "_id": "6",
+        "picture": "https://www.mrclutch.com/blog/wp-content/uploads/2017/03/overtaking.jpg",
+        "name": "overtaking",
+        "percentage": "35% accident this causes "
+     
+    },
+    {
+        "_id": "7",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT58LlUF-QqCywmFpz_7kMV449hiMgbOv5GFw",
+        "name": "dilapidated roads",
+        "percentage": "40% accident this causes "
+     
+    }
+   
+ 
+  ]
