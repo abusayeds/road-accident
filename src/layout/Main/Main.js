@@ -6,6 +6,7 @@ import './Main.css'
 import Footer from '../../Components/Footer/Footer';
 
 
+
 const Main = () => {
     return (
         <div>
@@ -20,7 +21,7 @@ const Main = () => {
            <div>
             <Recommeded></Recommeded>
            </div>
-
+         
            </div>
             
         </div>

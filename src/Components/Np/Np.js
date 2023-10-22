@@ -8,7 +8,7 @@ const Np = () => {
         <main >
         <section>
             <div className='flex  justify-center items-center md:mt-3'>
-                <img className='p-2 md:w-4/6 md:m-auto ' src='https://omgnepal.com/wp-content/uploads/2017/11/y.jpg' alt=""  />
+                <img className='p-2 md:w-2/6 md:m-auto ' src='https://omgnepal.com/wp-content/uploads/2017/11/y.jpg' alt=""  />
             </div>
         </section>
         <section className='md:w-5/6 md:m-auto pt-4 px-2 '>
@@ -18,7 +18,7 @@ const Np = () => {
           <div className='text-start'>
             <p className='font-bold'>Causes of Road Accidents in Napal</p>
           <div className='  p-2' >
-              <div className='flex md:w-4/6'>
+              <div className='flex md:w-2/6'>
                 
                 <div>
                 <Link to='/causes'><p><img className='rounded' src="https://c8.alamy.com/comp/2A8W46A/nepalese-flag-text-font-nepal-symbol-background-2A8W46A.jpg" alt="" /></p></Link>

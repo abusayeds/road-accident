@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
 import './Header.css'
+import { authContext } from '../../Context/Context';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleArrowDown, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 const navigation = [
   { name: 'Home', to: '/', current: true },
-  { name: 'Dashboard', to: '/dashboard', current: true },
+  { name: 'Dashboard', to: '/form', current: true },
 
 ]
 
 
 
 const Header = () => {
+ const {user} = useContext(authContext)
+ const {logOut} = useContext(authContext)
+
+ console.log(user)
+
+
   return (
    <Disclosure as="nav" className=" header bg-slate-100 text-black   rounded">
       {({ open }) => (
@@ -21,7 +32,7 @@ const Header = () => {
           <div className=" max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
+           
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
@@ -56,9 +67,26 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div className=" ml-2 ">
-               <Link to='/dashboard' className=' bg-cyan-700 hover:bg-cyan-600 p-2 text-1xl text-white  rounded'>Login</Link>
-               <Link to ='/dashboard' className='ml-2 bg-cyan-700 hover:bg-cyan-600 p-2 rounded text-1xl text-white' >Singup</Link>
+              <div className=" ml-2 flex items-center justify-center gap-3  ">
+            
+                <div>
+              { user?.email?  <Link onClick={logOut} to='/form' className=' bg-cyan-700 hover:bg-cyan-600 p-2 text-1xl text-white  rounded'>Logout <FontAwesomeIcon icon={faRightToBracket}></FontAwesomeIcon> </Link>  
+                :<Link to='/form' className=' bg-cyan-700 hover:bg-cyan-600 p-2 text-1xl text-white  rounded'>Login <FontAwesomeIcon icon={faCircleArrowDown}></FontAwesomeIcon>  </Link>
+                   }
+               </div>
+               <div>
+              {
+                
+                <img className='img' src={user?.photoURL} alt=""/>
+                
+               }
+              
+               
+              
+              
+              
+              </div>
+              
               </div>
             </div>
           </div>

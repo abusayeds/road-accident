@@ -1,45 +1,29 @@
-import React, {  useState } from 'react';
-import Causesadd from '../Cousesadd/Causesadd';
-import { useLoaderData } from 'react-router-dom';
+import React from 'react';
+
+import { Link, useLoaderData } from 'react-router-dom';
 import './Cause.css'
 
 const Causes = () => {
     const causes = useLoaderData()
-    const [addcauses, setaddcauses ] = useState([])
 
-   const addcouse = cause => {
-         const exists = addcauses.find( Ad => Ad._id === cause._id)
-         if(exists){
-          alert('This reson alrady added')
-         } 
-         else{
-            const Newcause = [...addcauses, cause ] 
-            setaddcauses(Newcause) 
-     }
-         }
-         
-         const removeCause =(reson) => {
-            const newreson = addcauses.filter( re => re._id !==reson._id)
-            setaddcauses(newreson)
-         }
 
 
     
     return (
-        <div className=' mt-4  '>
-            <div className=' reson p-4 '>
+        <div className=''>
+            <div className=' reson md:w-5/6 md:mx-auto md:my-4 p-2  '>
             {
                 causes.map( cause => 
-                    <div  onClick={ () => addcouse(cause)}  key={cause._id} className=' bg-slate-200 md:4    ' >
+                    <div   key={cause._id} className=' bg-slate-200 p-2 rounded   ' >
                 
-                    <div>
-                     <img className='rounded w-full  h-28 ' src={cause.picture} alt="" />
+                    <div className=' flex items-end justify-center'>
+                     <img className=' rounded h-32 w-5/6  ' src={cause.picture} alt="" />
                     </div>
 
-                     <div className='text-start px-2 py-1'>
+                     <div className='text-start mt-4 md:ml-5'>
                        <p>{cause.name}</p>
                        <p>{cause.percentage}</p>
-                       <p ><button className='bg-cyan-800 text-white px-1 py-1 rounded hover:bg-cyan-600 zoom' ><small>Select_cause</small></button></p>
+                       <Link to='/form' ><button className='bg-cyan-800 text-white rounded hover:bg-cyan-600 zoom' ><small>Select_cause</small></button></Link>
                       </div>
 
                    </div>
@@ -49,13 +33,7 @@ const Causes = () => {
                 )
             }
             </div>
-            <div>
-               <Causesadd
-               addcauses= {addcauses}
-               removeCause={removeCause}
-               ></Causesadd>
-               
-            </div>
+          
         </div>
 
     );

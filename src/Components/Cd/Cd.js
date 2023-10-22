@@ -8,7 +8,7 @@ const Cd = () => {
         <main >
         <section>
             <div className='flex  justify-center items-center md:mt-3'>
-                <img className='p-2 md:w-4/6 md:m-auto ' src='https://ukranews.com/upload/media/2021/04/23/6082a2a91d6e3-Trafik._Dorozhnoe_dvizhenie_v_Kitae.jpg' alt=""  />
+                <img className='p-2 md:w-3/6 md:m-auto ' src='https://ukranews.com/upload/media/2021/04/23/6082a2a91d6e3-Trafik._Dorozhnoe_dvizhenie_v_Kitae.jpg' alt=""  />
             </div>
         </section>
         <section className='md:w-5/6 md:m-auto pt-4 px-2 '>
@@ -18,7 +18,7 @@ const Cd = () => {
           <div className='text-start'>
             <p className='font-bold'>Causes of Road Accidents in China</p>
           <div className='  p-2' >
-              <div className='flex md:w-4/6'>
+              <div className='flex md:w-2/6'>
                 
                 <div>
                 <Link to='/causes'><p><img className='rounded' src="https://previews.123rf.com/images/magcom/magcom1208/magcom120800007/14715661-3d-china-word-text-flag.jpg" alt=""  /></p></Link>

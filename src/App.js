@@ -11,6 +11,10 @@ import Md from './Components/Md/Md';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
 import Causes from './Components/Causes/Causes';
+import Longinlaout from './Components/loginlayout/Longinlaout';
+import From from './Components/Fromlogin/From';
+import SingUp from './Components/Singup/SingUp';
+
 
 
 function App() {
@@ -23,7 +27,32 @@ function App() {
         path: '',
         element: <Home></Home>
       },
-      {
+      
+         
+
+
+      ],
+     },
+     {
+      
+       path: '/',
+       element: <Longinlaout></Longinlaout> ,
+       children: [
+        {
+          path:'dashboard',
+          loader: () => fetch('Tools.json'),
+          element: <Dashboard></Dashboard>
+        },
+        {
+          path: 'form',
+          element: <From></From>
+        }
+        ,
+        {
+          path: 'singup',
+          element: <SingUp></SingUp>
+        },
+         {
         path: 'bd',
         element:<BanglaBD></BanglaBD> 
       },
@@ -48,17 +77,12 @@ function App() {
         element: <Md></Md>
       },
       {
-        path: 'dashboard',
-        element: <Dashboard></Dashboard>
-      },
-      {
         path: 'causes',
         loader: () => fetch('Tools.json'),
         element: <Causes></Causes>
-      }
-
-
-      ]
+      },
+       ]
+      
      }
   ])
   return (

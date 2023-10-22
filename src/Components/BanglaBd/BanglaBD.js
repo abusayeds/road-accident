@@ -8,7 +8,7 @@ const BanglaBD = () => {
         <main >
             <section>
                 <div className='flex  justify-center items-center md:mt-3'>
-                    <img className='p-2 md:w-4/6 md:m-auto ' src='https://image.slidesharecdn.com/presentation1-190322171937/75/road-accident-in-bangladesh-1-2048.jpg?cb=1668305366' alt=""  />
+                    <img className='p-2 md:w-3/6 md:m-auto ' src='https://image.slidesharecdn.com/presentation1-190322171937/75/road-accident-in-bangladesh-1-2048.jpg?cb=1668305366' alt=""  />
                 </div>
             </section>
             <section className='md:w-5/6 md:m-auto pt-4 px-2 '>
@@ -18,7 +18,7 @@ const BanglaBD = () => {
               <div className='text-start'>
                 <p className='font-bold'>Causes of Road Accidents in bangladesh</p>
               <div className='  p-2' >
-                  <div className='flex md:w-4/6'>
+                  <div className='flex md:w-2/6'>
                     
                     <div>
                     <Link to='/causes'><p><img className='rounded' src="https://t4.ftcdn.net/jpg/04/73/67/49/360_F_473674937_HJnwfSMsQJ4f4CLM9Ijgf0NuM1aXBs31.jpg" alt="" /></p></Link>

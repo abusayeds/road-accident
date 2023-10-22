@@ -1,0 +1,13 @@
+.dashbord{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+@media screen and (max-width:768px) {
+    .dashbord{
+        display: block;
+        gap: 2px;
+    }
+    
+}

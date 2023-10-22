@@ -8,7 +8,7 @@ const Id = () => {
         <main >
         <section>
             <div className='flex  justify-center items-center md:mt-3'>
-                <img className='p-2 md:w-4/6 md:m-auto ' src='https://i.ytimg.com/vi/DksPfrGqw4c/hqdefault.jpg' alt=""  />
+                <img className='p-2 md:w-3/6 md:m-auto ' src='https://i.ytimg.com/vi/DksPfrGqw4c/hqdefault.jpg' alt=""  />
             </div>
         </section>
         <section className='md:w-5/6 md:m-auto pt-4 px-2 '>
@@ -18,7 +18,7 @@ const Id = () => {
           <div className='text-start'>
             <p className='font-bold'>Causes of Road Accidents in India</p>
           <div className='  p-2' >
-              <div className='flex md:w-4/6'>
+              <div className='flex md:w-2/6'>
                 
                 <div>
                 <Link to='/causes'><p><img className='rounded' src="https://previews.123rf.com/images/markuk97/markuk971704/markuk97170400022/76706331-india-word-3d-illustration-with-a-flag-texture-on-an-isolated-white-background.jpg" alt=""  /></p></Link>
